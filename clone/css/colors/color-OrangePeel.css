@@ -1,0 +1,412 @@
+/*===================================================================================================
+  OrangePeel
+===================================================================================================*/
+:root {
+  --color-theme-background: #fff;
+  --color-theme-text: #002A4A;
+  --color-theme-primary: #D64801;
+  --color-theme-secondary: #FF9312;
+  --color-theme-highlight: #ff8800;
+  --color-theme-accent: #002A4A;
+  --color-theme-border: #ddd;
+  --color-theme-text-btn: #fff;
+  --color-theme-text-link: #002A4A;
+  --color-theme-trans: transparent; }
+
+/* Body
+===================================================================*/
+body,
+.dropdown-menu {
+  background-color: var(--color-theme-background);
+  color: var(--color-theme-text); }
+
+/* Border
+===================================================================*/
+hr {
+  border-top-color: var(--color-theme-border); }
+
+.dropdown-menu {
+  border-color: var(--color-theme-border); }
+
+/* Buttons & Links 
+===================================================================*/
+a {
+  color: var(--color-theme-text-link); }
+  a:hover {
+    color: var(--color-theme-highlight); }
+
+.btn-link {
+  color: var(--color-theme-secondary); }
+  .btn-link:hover {
+    color: var(--color-theme-highlight); }
+
+.btn-primary,
+.btn-primary:focus {
+  background-color: var(--color-theme-secondary);
+  color: var(--color-theme-text-btn);
+  border-color: var(--color-theme-secondary); }
+
+.btn-primary:hover,
+.btn-primary:hover:focus,
+.btn-primary:not([disabled]):not(.disabled).active,
+.btn-primary:not([disabled]):not(.disabled):active,
+.show > .btn-primary.dropdown-toggle {
+  background-color: var(--color-theme-highlight);
+  color: var(--color-theme-text-btn) !important;
+  border-color: var(--color-theme-highlight); }
+
+.btn-primary:before {
+  background: var(--color-theme-highlight); }
+
+.btn-secondary,
+.btn-secondary:focus {
+  background-color: var(--color-theme-primary);
+  color: var(--color-theme-text-btn);
+  border-color: var(--color-theme-primary); }
+
+.btn-secondary:hover,
+.btn-secondary:hover:focus,
+.btn-secondary:not([disabled]):not(.disabled).active,
+.btn-secondary:not([disabled]):not(.disabled):active,
+.show > .btn-secondary.dropdown-toggle {
+  background-color: var(--color-theme-highlight);
+  color: var(--color-theme-text-btn) !important;
+  border-color: var(--color-theme-highlight); }
+
+.btn-secondary:before {
+  background: var(--color-theme-highlight); }
+
+.btn-outline-secondary,
+.btn-outline-secondary:focus {
+  background-color: var(--color-theme-trans);
+  color: var(--color-theme-text);
+  border-color: var(--color-theme-text); }
+
+.btn-outline-secondary:hover,
+.btn-outline-secondary:hover:focus,
+.btn-outline-secondary:not([disabled]):not(.disabled).active,
+.btn-outline-secondary:not([disabled]):not(.disabled):active,
+.show > .btn-outline-secondary.dropdown-toggle {
+  background-color: var(--color-theme-highlight);
+  color: var(--color-theme-text-btn) !important;
+  border-color: transparent; }
+
+.btn-outline-secondary:before {
+  background: var(--color-theme-highlight); }
+
+/* Pagination 
+===================================================================*/
+.page-link,
+.page-link:focus {
+  color: var(--color-theme-text); }
+
+.page-link:hover {
+  color: var(--color-theme-text-btn) !important;
+  border-color: var(--color-theme-primary); }
+
+.page-link:hover:before {
+  background-color: var(--color-theme-primary); }
+
+.page-item.active .page-link {
+  color: var(--color-theme-text-btn);
+  background-color: var(--color-theme-primary);
+  border-color: var(--color-theme-primary); }
+
+.page-item.active .page-link:before {
+  background-color: var(--color-theme-primary); }
+
+/* Illustrations - Errors & Empty Messages 
+===================================================================*/
+.emer-c1 {
+  fill: var(--color-theme-highlight); }
+
+.emer-c1-stroke {
+  stroke: var(--color-theme-highlight); }
+
+.emer-c2 {
+  fill: var(--color-theme-text); }
+
+.emer-c2-opacity {
+  fill-opacity: .15; }
+
+.emer-c3 {
+  fill: var(--color-theme-background); }
+
+.emer-c4 {
+  fill: var(--color-theme-primary); }
+
+.emer-c5 {
+  fill: var(--color-theme-highlight); }
+
+#Path_324 {
+  fill: var(--color-theme-highlight); }
+
+#Path_325 {
+  fill: var(--color-theme-primary); }
+
+#Path_323 {
+  fill: var(--color-theme-text); }
+
+/* Forms 
+===================================================================*/
+.form-control:focus,
+.productdetails-payment select:focus {
+  border-color: var(--color-theme-secondary); }
+
+[type="checkbox"] + label::before,
+[type="radio"] + label::before {
+  border-color: var(--color-theme-text);
+  color: var(--color-theme-text); }
+
+[type="checkbox"]:hover + label::before,
+[type="radio"]:hover + label::before {
+  border-color: var(--color-theme-highlight); }
+
+[type="checkbox"] + label::after,
+[type="radio"] + label::after {
+  background-color: var(--color-theme-highlight); }
+
+[type="radio"]:checked + label::after {
+  background: var(--color-theme-highlight); }
+
+[type="radio"]:checked + label::before {
+  border-color: var(--color-theme-highlight); }
+
+[type="checkbox"] + label::after {
+  border-color: var(--color-theme-text-btn); }
+
+[type="checkbox"]:checked + label::before {
+  background: var(--color-theme-highlight);
+  border-color: var(--color-theme-highlight); }
+
+/* Sitemap 
+===================================================================*/
+.sitemap-title {
+  border-bottom-color: var(--color-theme-border);
+  color: var(--color-theme-text); }
+
+.sitemap-title .sitemap-title-container {
+  border-bottom-color: var(--color-theme-secondary); }
+
+/*===================================================================================================
+  Module Colors
+===================================================================================================*/
+/* Header 
+===================================================================*/
+:root {
+  --header-background: var(--color-theme-background);
+  --header-highlight: var(--color-theme-highlight);
+  --header-text: var(--color-theme-text);
+  --header-primary: var(--color-theme-primary);
+  --header-secondary: var(--color-theme-secondary);
+  --header-navigationbartext: var(--color-theme-text-btn); }
+
+/* Footer 
+===================================================================*/
+:root {
+  --footer-background: var(--color-theme-background);
+  --footer-highlight: var(--color-theme-highlight);
+  --footer-text: var(--color-theme-text);
+  --footer-border: var(--color-theme-border); }
+
+/* Line 
+===================================================================*/
+:root {
+  --line-background: var(--color-theme-background);
+  --line-border: var(--color-theme-border); }
+
+/* Image 
+===================================================================*/
+:root {
+  --image-background: var(--color-theme-background); }
+
+/* Text 
+===================================================================*/
+:root {
+  --text-background: var(--color-theme-secondary);
+  --text-highlight: var(--color-theme-text); }
+
+.text,
+.text a {
+  color: var(--color-theme-text-btn); }
+
+/* Text with Image
+===================================================================*/
+:root {
+  --textwithimage-background: var(--color-theme-accent);
+  --textwithimage-highlight: var(--color-theme-highlight); }
+
+.textwithimage,
+.textwithimage a {
+  color: var(--color-theme-text-btn); }
+
+/* Map
+===================================================================*/
+:root {
+  --map-background: var(--color-theme-accent);
+  --map-highlight: var(--color-theme-highlight); }
+
+.map,
+.map a {
+  color: var(--color-theme-text-btn); }
+
+/* Title
+===================================================================*/
+:root {
+  --title-background: var(--color-theme-background); }
+
+/* Spacer
+===================================================================*/
+:root {
+  --spacer-background: var(--color-theme-background); }
+
+/* Slideshow
+===================================================================*/
+:root {
+  --slideshow-background: var(--color-theme-background);
+  --slideshow-highlight: var(--color-theme-text-btn); }
+
+/* Summary List
+===================================================================*/
+:root {
+  --list-background: var(--color-theme-background);
+  --list-highlight: var(--color-theme-highlight);
+  --list-btn: var(--color-theme-secondary);
+  --list-icon: var(--color-theme-highlight);
+  --list-border: var(--color-theme-border); }
+
+/* Detailed List
+===================================================================*/
+:root {
+  --detailedlist-background: var(--color-theme-background);
+  --detailedlist-highlight: var(--color-theme-highlight);
+  --detailedlist-primary: var(--color-theme-highlight);
+  --detailedlist-border: var(--color-theme-border); }
+
+/* Gallery
+===================================================================*/
+:root {
+  --gallery-background: var(--color-theme-background);
+  --gallery-highlight: var(--color-theme-highlight);
+  --gallery-primary: var(--color-theme-primary);
+  --gallery-title: var(--color-theme-text-btn);
+  --gallery-photocount: var(--color-theme-text-btn);
+  --gallery-buttontext: var(--color-theme-text-btn);
+  --gallery-arrows: var(--color-theme-primary);
+  --gallery-arrowicon: var(--color-theme-text-btn); }
+
+.gallery .gallery-banner-svg-bg {
+  fill: var(--gallery-highlight); }
+
+/* Gallery Slideshow
+===================================================================*/
+:root {
+  --galleryslideshow-background: var(--color-theme-background);
+  --galleryslideshow-highlight: var(--color-theme-highlight);
+  --galleryslideshow-arrows: var(--color-theme-primary);
+  --galleryslideshow-arrowicon: var(--color-theme-text-btn); }
+
+/* Product Slideshow
+===================================================================*/
+:root {
+  --productslideshow-background: var(--color-theme-background);
+  --productslideshow-highlight: var(--color-theme-highlight);
+  --productslideshow-button: var(--color-theme-secondary);
+  --productslideshow-arrows: var(--color-theme-primary);
+  --productslideshow-header: var(--color-theme-text);
+  --productslideshow-productprice: var(--color-theme-text);
+  --productslideshow-buttontext: var(--color-theme-text-btn);
+  --productslideshow-arrowicon: var(--color-theme-text-btn); }
+
+/* Employees
+===================================================================*/
+:root {
+  --employees-background: var(--color-theme-background);
+  --employees-highlight: var(--color-theme-highlight);
+  --employees-contactinfo: var(--color-theme-background);
+  --employees-border: var(--color-theme-border);
+  --employees-name: var(--color-theme-text);
+  --employees-title: var(--color-theme-secondary);
+  --employees-bio: var(--color-theme-text);
+  --employees-link: var(--color-theme-text-link); }
+
+/*  Products
+===================================================================*/
+:root {
+  --products-background: var(--color-theme-background);
+  --products-highlight: var(--color-theme-highlight);
+  --products-primary: var(--color-theme-primary);
+  --products-secondary: var(--color-theme-secondary);
+  --products-border: var(--color-theme-border);
+  --products-productname: var(--color-theme-text);
+  --products-price: var(--color-theme-text);
+  --products-text: var(--color-theme-text);
+  --products-buttontext: var(--color-theme-text-btn); }
+
+.products-loading-container .loader {
+  border-top-color: var(--products-primary); }
+
+@media screen and (max-width: 991px) {
+  .products .filter-sidebar,
+  .products .filter-topbar {
+    border-right: 0; }
+  .products .filter-sidebar.filter-sidebar-right {
+    border-left: 0; } }
+
+/*  Product Details
+===================================================================*/
+:root {
+  --productdetails-background: var(--color-theme-background);
+  --productdetails-primary: var(--color-theme-secondary);
+  --productdetails-secondary: var(--color-theme-secondary);
+  --productdetails-highlight: var(--color-theme-highlight);
+  --productdetails-border: var(--color-theme-border);
+  --productdetails-header: var(--color-theme-text);
+  --productdetails-text: var(--color-theme-text);
+  --productdetails-text-btn: var(--color-theme-text-btn);
+  --productdetails-text-link: var(--color-theme-secondary); }
+
+/*  eCommerce Cart & Checkout
+===================================================================*/
+:root {
+  --cartandcheckout-background: var(--color-theme-background);
+  --cartandcheckout-primary: var(--color-theme-primary);
+  --cartandcheckout-secondary: var(--color-theme-secondary);
+  --cartandcheckout-highlight: var(--color-theme-highlight);
+  --cartandcheckout-border: var(--color-theme-border);
+  --cartandcheckout-header: var(--color-theme-text);
+  --cartandcheckout-text: var(--color-theme-text);
+  --cartandcheckout-text-btn: var(--color-theme-text-btn);
+  --cartandcheckout-text-link: var(--color-theme-secondary); }
+
+/*  Forms
+===================================================================*/
+:root {
+  --forms-background: var(--color-theme-background);
+  --forms-highlight: var(--color-theme-highlight);
+  --forms-button: var(--color-theme-secondary);
+  --forms-border: var(--color-theme-border);
+  --forms-titles: var(--color-theme-text);
+  --forms-label: var(--color-theme-text);
+  --forms-buttontext: var(--color-theme-text-btn);
+  --forms-link: var(--color-theme-secondary); }
+
+/*  Business Info
+===================================================================*/
+:root {
+  --businessinfo-background: var(--color-theme-background);
+  --businessinfo-highlight: var(--color-theme-highlight);
+  --businessinfo-button: var(--color-theme-secondary);
+  --businessinfo-border: var(--color-theme-border);
+  --businessinfo-titles: var(--color-theme-text);
+  --businessinfo-businessname: var(--color-theme-text);
+  --businessinfo-businessinfo: var(--color-theme-text);
+  --businessinfo-label: var(--color-theme-text);
+  --businessinfo-buttontext: var(--color-theme-text-btn);
+  --businessinfo-link: var(--color-theme-secondary); }
+
+.businessinfo .contact-title:not(.contact-businessname) .contact-title-container {
+  border-bottom-color: var(--businessinfo-titles); }
+
+.businessinfo .contact-title.contact-businessname .contact-title-container {
+  border-bottom-color: var(--businessinfo-businessname); }

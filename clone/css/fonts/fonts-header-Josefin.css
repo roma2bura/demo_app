@@ -1,0 +1,58 @@
+/* Josefin Sans */
+.font-header,
+.font-header-JosefinSans .error-title,
+.font-header-JosefinSans .header .header-business-name,
+.font-header-JosefinSans .header .navbar-brand,
+.font-header-JosefinSans .footer .footer-business-name,
+.font-header-JosefinSans .title .title-heading,
+.font-header-JosefinSans .businessinfo .contact-title,
+.font-header-JosefinSans .employees .employees-name,
+.font-header-JosefinSans h5.modal-title,
+.font-header-JosefinSans .gallery .gallery-album-name,
+.font-header-JosefinSans .list .list-text-title,
+.font-header-JosefinSans .productslideshow .productslideshow-title-heading,
+.font-header-JosefinSans .productslideshow .productslideshow-item h3.product-title,
+.font-header-JosefinSans .products .product-title,
+.font-header-JosefinSans .productdetails .productdetails-info-name,
+.font-header-JosefinSans .detailedlist .detailedlist-item-title,
+.font-header-JosefinSans .products .filter-item-title,
+.font-header-JosefinSans .products-loading-container .loader-text,
+.font-header-JosefinSans .productdetails-bottom .nav-tabs .nav-item.nav-link,
+.font-header-JosefinSans .eCommerce .shoppingcart-titles,
+.font-header-JosefinSans h1,
+.font-header-JosefinSans h2,
+.font-header-JosefinSans h3,
+.font-header-JosefinSans h4,
+.font-header-JosefinSans h5,
+.font-header-JosefinSans h6 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+    -webkit-text-stroke: 0;
+}
+
+.font-header-JosefinSans .contact-details,
+.font-header-JosefinSans .gallery-img-text,
+.font-header-JosefinSans .employees-title {
+    font-family: inherit;
+    font-weight: inherit;
+}
+
+.font-header-JosefinSans .detailedlist .detailedlist-item-title {
+    font-size: 1.7rem;
+}
+
+.font-header-JosefinSans .productslideshow .productslideshow-item h3.product-title {
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    max-height: 2.7rem;
+}
+
+.font-header-JosefinSans .products .products-item .product-title {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    max-height: 2.9rem;
+}
+
+.font-header-JosefinSans .products .filter-heading-title {
+    padding-top: 4px;
+}
