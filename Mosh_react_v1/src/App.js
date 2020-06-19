@@ -23,7 +23,7 @@ class App extends Component {
 
   handleReset = () => {
     const counters = this.state.counters.map((c) => {
-      // to map each counter
+      // to map each counter. ok
       c.value = 0; // return value 0
       return c;
     });
