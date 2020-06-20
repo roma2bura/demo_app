@@ -5,8 +5,8 @@ const Stats = (props) => {
   const totalTasks = props.tasks.length;
 
   // Reduce method
-  const totalPoints = props.tasks.reduce((total, player) => {
-    return total + player.score;
+  const totalPoints = props.tasks.reduce((total, task) => {
+    return total + task.score;
   }, 0);
 
   const totalLeft = totalTasks - totalPoints;

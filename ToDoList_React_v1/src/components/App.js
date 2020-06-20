@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import Header from "./Header"; // path as a string, .js extension not req.
 import Footer from "./Footer";
-import Player from "./Player"; // path as a string, .js extension not req.
+import Task from "./Task"; // path as a string, .js extension not req.
 import AddNewTask from "./AddNewTask";
 
 class App extends Component {
@@ -31,8 +31,8 @@ class App extends Component {
     ],
   };
 
-  // player id counter
-  prevPlayerId = 4;
+  // task id counter
+  prevTaskId = 4;
 
   handleScoreChange = (index, delta) => {
     this.setState((prevState) => ({
@@ -52,13 +52,13 @@ class App extends Component {
         {
           name: name,
           score: 0,
-          id: (this.prevPlayerId += 1),
+          id: (this.prevTaskId += 1),
         },
       ],
     });
   };
 
-  handleRemovePlayer = (id) => {
+  handleRemoveTask = (id) => {
     this.setState((prevState) => {
       return {
         tasks: prevState.tasks.filter((p) => p.id !== id),
@@ -72,15 +72,15 @@ class App extends Component {
         <Header title="To do list $$$" tasks={this.state.tasks} />
 
         {/* Tasks list */}
-        {this.state.tasks.map((player, index) => (
-          <Player
-            name={player.name}
-            score={player.score}
-            id={player.id}
-            key={player.id.toString()}
+        {this.state.tasks.map((task, index) => (
+          <Task
+            name={task.name}
+            score={task.score}
+            id={task.id}
+            key={task.id.toString()}
             index={index}
             changeScore={this.handleScoreChange}
-            removePlayer={this.handleRemovePlayer}
+            removeTask={this.handleRemoveTask}
           />
         ))}
         <AddNewTask addTask={this.handleAddTask} />
