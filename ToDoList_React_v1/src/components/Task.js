@@ -5,7 +5,7 @@ import Counter from "./Counter"; // path as a string, .js extension not req.
 const Task = (props) => {
   return (
     <div className="player">
-      <span className="player-name">
+    <span className={`player-name ${props.score>0?"strikeThrough":""}`}>
         <button
           className="remove-player"
           onClick={() => props.removeTask(props.id)}
