@@ -11,21 +11,25 @@ class App extends Component {
       {
         name: "Order Food",
         score: 0,
+        result: false,
         id: 1,
       },
       {
         name: "Invite Jessica",
         score: 0,
+        result: false,
         id: 2,
       },
       {
         name: "Buy drinks",
         score: 0,
+        result: false,
         id: 3,
       },
       {
         name: "Call Alena",
         score: 0,
+        result: false,
         id: 4,
       },
     ],
@@ -34,15 +38,11 @@ class App extends Component {
   // task id counter
   prevTaskId = 4;
 
-  handleScoreChange = (index, delta) => {
+  handleScoreChange = (index, delta, alpha) => {
     this.setState((prevState) => ({
-      score: (prevState.tasks[index].score += delta),
-      name: (prevState.tasks[index].name += this.handleStrike),
+      result: (prevState.tasks[index].result = delta),
+      score: (prevState.tasks[index].score = alpha),
     }));
-  };
-
-  handleStrike = (e) => {
-    e.target.classList.toggle("strikeThrough");
   };
 
   handleAddTask = (name) => {
@@ -53,6 +53,7 @@ class App extends Component {
           name: name,
           score: 0,
           id: (this.prevTaskId += 1),
+          result: false,
         },
       ],
     });
@@ -76,6 +77,7 @@ class App extends Component {
           <Task
             name={task.name}
             score={task.score}
+            result={task.result}
             id={task.id}
             key={task.id.toString()}
             index={index}
